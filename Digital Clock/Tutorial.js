@@ -13,7 +13,16 @@ function updateClock(){
         h=h-12
         ampm="PM"
     }
-
+    if(h<10){
+        h="0"+ h;
+    }
+    if(m<10){
+        m="0"+ m;
+    }
+    if(s<10){
+        s="0"+ s;
+    }
+    
     hourE1.innerText=h;
     minuteE1.innerText=m;
     secondE1.innerText=s;
